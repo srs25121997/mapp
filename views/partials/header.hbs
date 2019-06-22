@@ -1,0 +1,77 @@
+
+
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Welcome to Arpita's Arts and Cooking Class</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+     
+     
+    
+    </ul>
+    <ul class="navbar-nav ">
+         <li class="nav-item active">
+        <a class="nav-link" href="/">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+          <!--<li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Online Courses</a>
+                    <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#">At Centre Courses</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          Products
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Art Products</a>
+                    <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="#">Beauty Products</a>
+        </div>
+      </li>
+      <li class="nav-item"> -->
+
+        <a class="nav-link" href="/shopping-cart/">
+          Shopping Cart
+          <span class="badge">{{ session.cart.totalQty }}</span>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+          User
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              {{# if login }}
+          <a class="dropdown-item" href="/user/profile">Account</a>
+                    <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/user/logout">Log Out</a>
+          {{ else }}
+          <a class="dropdown-item" href="/user/signin">Log In</a>
+                    <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/user/signup">Sign up</a>
+          {{/ if}}
+       
+        </div>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+

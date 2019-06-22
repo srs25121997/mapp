@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h1>Dashboard</h1>
+        <hr>
+        <h2>My Courses</h2>
+        {{# each orders }}
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul class="list-group">
+                        {{# each this.items }}
+                            <li class="list-group-item">
+                                <span class="badge">{{ this.price }}</span>
+                                {{ this.item.title }} | {{ this.qty }} Units
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+                    <iframe src="https://player.vimeo.com/video/331228320" width="640" height="640" frameborder="10" allow="autoplay; fullscreen" allowfullscreen></iframe>                <div class="panel-footer">
+
+                </div>
+                <hr>
+                            <a href="https://drive.google.com/open?id=1BJhfkBe65UGPoa-zgeEE23j2k6v0vI8w" target="_blank" type="button" class="btn btn-success">Download Pdf</a>
+
+
+            </div>
+        {{/each}}
+    </div>
+</div>
