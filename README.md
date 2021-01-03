@@ -1,10 +1,14 @@
 # Elearning_nodeJs
 
+This is a Elearnign Website.
+I have used vimeo for video hosting and Instamojo for payment gateway.
+
+
 You need to install the following:
 
-  Express Js
-  MongoDb
-  Node.js
+  Express Js,
+  MongoDb,
+  Node.js.
 
 To run the application
 
