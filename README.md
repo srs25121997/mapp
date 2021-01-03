@@ -8,7 +8,7 @@ You need to install the following:
 
 To run the application
 
-    cd Elearnign_nodeJs
+    cd Elearning_nodeJs
     npm install
 
   How to add courses??
